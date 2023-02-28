@@ -1,0 +1,49 @@
+.header {
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 50;
+   border-bottom: 0.0625rem solid #eeeeee1a;
+   background-color:#282e38;
+   &__body {
+      padding: 1.875rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media (max-width: 500px) {
+         padding: 0.625rem 0;
+         flex-direction: column;
+         row-gap: 10px;
+      }
+   }
+
+   &__logo {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1.5; /* 36/24 */
+   }
+}
+.menu {
+
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 40px;
+      row-gap: 10px;
+      align-items: center;
+      @media (max-width: 500px) {
+         column-gap: 20px;
+         justify-content: center;
+      }
+   }
+
+   &__link {
+      color: #fff;
+      transition: color .2s ease;
+      &:hover{
+         color: #00ADB5;
+      }
+   }
+}

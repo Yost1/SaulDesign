@@ -1,0 +1,63 @@
+.footer {
+   padding: 45px 0;
+   border-top: 1px solid rgba(238, 238, 238, 0.1);
+   
+   &__menu {
+      &:not(:last-child){
+         margin-bottom: 28px;
+      }
+   }
+}
+
+.menu-footer {
+
+   &__list {
+      display: flex;
+      column-gap: 48px;
+      row-gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__link {
+      color: #eee;
+      transition: color .2s ease;
+      &:hover{
+         color: #00ADB5;
+      }
+      span{
+         display: inline-block;
+         padding-left: 40px;
+      }
+      &_home span{
+         background: url('../icons/footer/home.svg') left center no-repeat;
+      }
+      &_about span{
+         background: url('../icons/footer/user.svg') left center no-repeat;
+      }
+      &_contact span{
+         background: url('../icons/footer/phone.svg') left center no-repeat;
+      }
+   }
+}
+.social {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 24px;
+   flex-wrap: wrap;
+   &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #393E46;
+      border-radius: 50px;
+      width: 48px;
+      height: 48px;
+      transition: background-color .2s ease;
+      &:hover{
+         background-color: #00ADB5;
+      }
+   }
+}
